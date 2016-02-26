@@ -30,7 +30,7 @@ WORKDIR /opt/dynamodb
 #
 #---------------------------------------------------------------------------
 
-RUN wget -q -O - http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dynamodb_2015-07-16_1.0.tar.gz | tar -xzf - -C /opt/dynamodb
+RUN wget -q -O - http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dynamodb_local_latest.tar.gz | tar -xzf - -C /opt/dynamodb
 
 EXPOSE 8000
 
