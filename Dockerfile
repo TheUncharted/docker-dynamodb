@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 MAINTAINER Matt Ho <matt.ho@gmail.com>
 
-ENV UPDATED_AT 2016-02-26
+ENV UPDATED_AT 2016-06-27
 
 #
 # Install Java 8
