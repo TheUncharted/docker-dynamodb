@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 MAINTAINER Matt Ho <matt.ho@gmail.com>
 
-ENV UPDATED_AT 2016-06-27
+ENV UPDATED_AT 2017-03-13
 
 #
 # Install Java 8
@@ -30,7 +30,7 @@ WORKDIR /opt/dynamodb
 #
 #---------------------------------------------------------------------------
 
-RUN wget -q -O - http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dynamodb_local_latest.tar.gz | tar -xzf - -C /opt/dynamodb
+RUN wget -q -O - https://s3-us-west-2.amazonaws.com/dynamodb-local/dynamodb_local_latest.tar.gz | tar -xzf - -C /opt/dynamodb
 
 EXPOSE 8000
 
